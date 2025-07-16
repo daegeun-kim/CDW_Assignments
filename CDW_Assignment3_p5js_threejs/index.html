@@ -1,0 +1,50 @@
+<!-- Basic HTML structure -->
+<!DOCTYPE html>                    <!-- Declares this is an HTML5 document -->
+<html lang="en">                   <!-- Root element, lang="en" specifies English language -->
+<head>                             <!-- Contains metadata about the page (not visible) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+  <meta charset="UTF-8">           <!-- Sets character encoding for special characters -->
+  <title>Module 1</title>          <!-- Title that appears in browser tab -->
+  <link rel="stylesheet" href="style.css">  <!-- Links to our CSS file for styling -->
+</head>
+<body>
+  <header>
+    <div class="left">Columbia CDP</div>
+    <div class="center">Daegeun Kim</div>
+    <div class="right">Computational Design Workflow</div>
+  </header>
+  <div class="nav-buttons">
+    <button onclick="location.href='../CDW_Assignment1,2_vibe_coding/index.html'">Assignment 1&2</button>
+    <button onclick="location.href='../CDW_Assignment3_p5js_threejs/index.html'">Assignment 3</button>
+    <button onclick="location.href='../CDW_Assignment4_d3js/index.html'">Assignment 4</button>
+    <button onclick="location.href='../CDW_Assignment5_relational_chart/index.html'">Assignment 5</button>
+  </div>
+    <div class="title">
+      <span class="p5">P5js</span>, <span class="three">Threejs</span> Assignment
+    </div>
+    <div class="canvas-row">
+      <div class="canvas-col left">
+        <div class="canvas-title">p5.js(static)</div>
+        <div id="canvas-container-1"></div>
+        <div class="canvas-title">p5.js(interactive)</div>
+        <div id="canvas-container-2"></div>
+      </div>
+      <div class="canvas-col right">
+        <div class="canvas-title">three.js(static)</div>
+        <div id="canvas-container-3"></div>
+        <div class="canvas-title">three.js(static)</div>
+        <div id="canvas-container-4"></div>
+      </div>
+    </div>
+
+    <script src="canvas1.js"></script>
+    <script src="canvas2.js"></script>
+    <script src="canvas3.js"></script>
+    <script src="canvas4.js"></script>
+</body>
+</html>
+
+<!-- Interactive elements with IDs for JavaScript -->
+<div id="messageDisplay"></div>            <!-- Empty container div with ID for JavaScript to fill -->

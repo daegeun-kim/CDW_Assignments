@@ -1,0 +1,107 @@
+/* Basic styling for the page */
+body {                              /* Target the entire page body */
+  font-family: 'Helvetica', sans-serif;  /* Set the font to Roboto, with sans-serif as backup */
+  font-size: 40px;
+  text-align: center;
+  color: #111;                        /* Set text color to dark gray (almost black) */
+  margin: 20px;                          /* Remove default spacing around the body */
+  min-height: 100vh;                  /* Ensure gradient covers full viewport height */
+}
+
+/* Make the first paragraph (First Assignment) smaller */
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.p5 {
+  color: #e91e63; /* pink */
+}
+.three {
+  color: #3f51b5; /* blue */
+}
+
+/* Make the message display text the same size as First Assignment */
+#messageDisplay {
+  font-size: 24px;                   /* Same font size as "First Assignment" */
+}
+
+.canvas-title {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;
+  border-bottom: 1px solid #616161;
+  padding-bottom: 20px;
+}
+
+.left {
+  font-size: 15px;
+  color: grey
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: grey
+}
+
+.right {
+  font-size: 15px;
+  color: grey
+}
+
+.canvas-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.canvas-col.left {
+  /* Optionally add left-specific styles */
+}
+
+.canvas-col.right {
+  /* Optionally add right-specific styles */
+}
+
+#canvas-container-1, #canvas-container-2, #canvas-container-3, #canvas-container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(66, 66, 66, 0.2);
+  border: 1px solid #535353;
+  cursor: pointer;
+}

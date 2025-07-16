@@ -1,0 +1,77 @@
+/* Basic styling for the page */
+body {                              /* Target the entire page body */
+  background: linear-gradient(135deg, #58b4ff 0%, #ffffff 50%, #75ffd3 100%);  /* Light blue to light red gradient */
+  font-weight: bold;
+  color: #111;                        /* Set text color to dark gray (almost black) */
+  margin: 0;                          /* Remove default spacing around the body */
+  min-height: 100vh;                  /* Ensure gradient covers full viewport height */
+  font-family: 'Helvetica', sans-serif;  /* Set the font to Roboto, with sans-serif as backup */
+  font-size: 40px;
+  text-align: center;
+  color: #111;                        /* Set text color to dark gray (almost black) */
+  margin: 20px;                          /* Remove default spacing around the body */
+}
+.left {
+  font-size: 15px;
+  color: grey
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: grey
+}
+
+.right {
+  font-size: 15px;
+  color: grey
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;
+  border-bottom: 1px solid #616161;
+  padding-bottom: 20px;
+}
+
+/* Make the first paragraph (First Assignment) smaller */
+p:first-of-type {
+  font-size: 24px;                   /* Smaller font size for "First Assignment" */
+}
+
+/* Make the message display text the same size as First Assignment */
+#messageDisplay {
+  font-size: 24px;                   /* Same font size as "First Assignment" */
+}
+
+/* Interactive button styling */
+button {                             /* Target all button elements */
+  background-color: #e6e6e6;             /* Set button background to dark gray */
+  color: rgb(0, 0, 0);                       /* Set button text color to white */
+  padding: 12px 24px;                 /* Add 12px top/bottom, 24px left/right spacing inside */
+  cursor: pointer;                    /* Change mouse cursor to hand when hovering over button */
+  transition: background-color 0.3s;  /* Smooth color change animation (0.3 seconds) */
+}
+
+/* Hover effect for buttons */
+button:hover {                       /* Apply styles when user hovers over button */
+  background-color: #333;             /* Change background to lighter gray on hover */
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(66, 66, 66, 0.2);
+  border: 1px solid #535353;
+  cursor: pointer;
+}

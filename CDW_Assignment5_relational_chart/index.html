@@ -1,0 +1,43 @@
+<!-- Basic HTML structure -->
+<!DOCTYPE html>                    <!-- Declares this is an HTML5 document -->
+<html lang="en">                   <!-- Root element, lang="en" specifies English language -->
+<head>                             <!-- Contains metadata about the page (not visible) -->
+  <script src="d3.js"></script>
+  <script src="d3-sankey.min.js"></script>
+  <meta charset="UTF-8">           <!-- Sets character encoding for special characters -->
+  <title>Module 1</title>          <!-- Title that appears in browser tab -->
+  <link rel="stylesheet" href="style.css">  <!-- Links to our CSS file for styling -->
+</head>
+<body>
+  <header>
+    <div class="left">Columbia CDP</div>
+    <div class="center">Daegeun Kim</div>
+    <div class="right">Computational Design Workflow</div>
+  </header>
+  <div class="nav-buttons">
+    <button onclick="location.href='../CDW_Assignment1,2_vibe_coding/index.html'">Assignment 1&2</button>
+    <button onclick="location.href='../CDW_Assignment3_p5js_threejs/index.html'">Assignment 3</button>
+    <button onclick="location.href='../CDW_Assignment4_d3js/index.html'">Assignment 4</button>
+    <button onclick="location.href='../CDW_Assignment5_relational_chart/index.html'">Assignment 5</button>
+  </div>
+    <div class="title">
+      <span class="d3">D3js</span> Assignment (Node & Link)
+    </div>
+    <p id="chart-title">Total Number of Accidents in 6-hour intervals (2013 - 2024)</p>
+      <div class="canvas">
+        <div class="canvas-title">Accidents between Motorist, Cyclist, and Pedestrian (00:00 - 06:00)</div>
+        <div id="canvas-container-1"></div>
+        <div class="canvas-title">Accidents between Motorist, Cyclist, and Pedestrian (06:00 - 12:00)</div>
+        <div id="canvas-container-2"></div>
+        <div class="canvas-title">Accidents between Motorist, Cyclist, and Pedestrian (12:00 - 18:00)</div>
+        <div id="canvas-container-3"></div>
+        <div class="canvas-title">Accidents between Motorist, Cyclist, and Pedestrian (18:00 - 24:00)</div>
+        <div id="canvas-container-4"></div>
+      </div>
+    <script src="data.js"></script>
+    <script src="relational.js"></script>
+</body>
+</html>
+
+<!-- Interactive elements with IDs for JavaScript -->
+<div id="messageDisplay"></div>            <!-- Empty container div with ID for JavaScript to fill -->

@@ -1,0 +1,51 @@
+<!-- Basic HTML structure -->
+<!DOCTYPE html>                    <!-- Declares this is an HTML5 document -->
+<html lang="en">                   <!-- Root element, lang="en" specifies English language -->
+<head>                             <!-- Contains metadata about the page (not visible) -->
+    <meta charset="UTF-8">           <!-- Sets character encoding for special characters -->
+    <title>Module 1</title>          <!-- Title that appears in browser tab -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  <!-- Links to our CSS file for styling -->
+</head>
+<body>
+    <header>
+        <div class="left">Columbia CDP</div>
+        <div class="center">Daegeun Kim</div>
+        <div class="right">Computational Design Workflow</div>
+    </header>
+    <div class="nav-buttons">
+        <button onclick="location.href='../CDW_Assignment1,2_vibe_coding/'">Assignment 1&2</button>
+        <button onclick="location.href='../CDW_Assignment3_p5js_threejs/'">Assignment 3</button>
+        <button onclick="location.href='../CDW_Assignment4_d3js/'">Assignment 4</button>
+        <button onclick="location.href='../CDW_Assignment5_relational_chart/'">Assignment 5</button>
+        <button onclick="location.href='../CDW_Assignment6_mapbox/'">Assignment 6</button>
+    </div>
+    <div class="title">
+        <p><span id="mapbox-title">Mapbox</span> Assignment</p>
+    </div>
+    <div class="canvas">
+        <p id="chart-title">Location Where I Got Best Cityscape Photos</p>
+        <div id="canvas"></div>
+    </div>
+    <div class="controls">
+        <input type="text" id="searchFeature" placeholder="Search neighborhoods...">
+        <button id="resetFilters">Reset Search</button>
+        <button id="fitToData">Fit to Data</button>
+    </div>
+    <div class="search-options">
+        <p><b>Search Options:</b><br>
+        Lower Manhattan<br>
+        Brooklyn Dumbo<br>
+        High Line<br>
+        Central Midtown<br>
+        Central Park<br>
+        Hamilton Park</p>
+    </div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- Interactive elements with IDs for JavaScript -->
+<div id="messageDisplay"></div>            <!-- Empty container div with ID for JavaScript to fill -->

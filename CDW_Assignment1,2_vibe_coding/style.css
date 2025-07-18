@@ -1,7 +1,6 @@
 /* Basic styling for the page */
 body {                              /* Target the entire page body */
   background: linear-gradient(135deg, #58b4ff 0%, #ffffff 50%, #75ffd3 100%);  /* Light blue to light red gradient */
-  font-weight: bold;
   color: #111;                        /* Set text color to dark gray (almost black) */
   margin: 0;                          /* Remove default spacing around the body */
   min-height: 100vh;                  /* Ensure gradient covers full viewport height */

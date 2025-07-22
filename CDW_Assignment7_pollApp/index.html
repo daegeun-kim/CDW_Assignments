@@ -1,11 +1,10 @@
-<!-- Basic HTML structure -->
 <!DOCTYPE html>                    <!-- Declares this is an HTML5 document -->
 <html lang="en">                   <!-- Root element, lang="en" specifies English language -->
 <head>                             <!-- Contains metadata about the page (not visible) -->
     <meta charset="UTF-8">           <!-- Sets character encoding for special characters -->
     <title>Module 1</title>          <!-- Title that appears in browser tab -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
     <link rel="stylesheet" href="style.css">  <!-- Links to our CSS file for styling -->
 </head>
 <body>
@@ -24,31 +23,46 @@
         <button onclick="location.href='../CDW_Assignment6_mapbox/'">Assignment 6</button>
         <button onclick="location.href='../CDW_Assignment7_pollApp/'">Assignment 6</button>
     </div>
-    <div class="title">
-        <p><span id="mapbox-title">Mapbox</span> Assignment</p>
+
+    <!-- Poll Section -->
+    <div class="section-title">Simple Poll</div>
+    <p>Click a button to vote. The results update in real-time thanks to Firebase!</p>
+    
+    <div class="poll-container">
+      <!-- Poll question -->
+      <div class="poll-question">
+        <h3><b>Python vs Javascript?</b></h3>
+      </div>
+      
+      <!-- Vote buttons -->
+      <div class="vote-buttons">
+        <button class="vote-btn vote-yes" id="vote-yes">
+          <span class="vote-text"> Python </span>
+          <span class="vote-count" id="yes-count">0</span>
+        </button>
+        
+        <button class="vote-btn vote-no" id="vote-no">
+          <span class="vote-text">Javascript</span>
+          <span class="vote-count" id="no-count">0</span>
+        </button>
+      </div>
+      
+      <!-- Total votes display -->
+      <div class="total-votes">
+        <p>Total votes: <span id="total-votes">0</span></p>
+      </div>
     </div>
-    <div class="canvas">
-        <p id="chart-title">Location Where I Got Best Cityscape Photos</p>
-        <div id="canvas"></div>
+
+    <!-- Status Display -->
+    <div class="section-title">Connection Status</div>
+    <div id="connection-status" class="status-display">
+      <p>Connecting to Firebase...</p>
     </div>
-    <div class="controls">
-        <input type="text" id="searchFeature" placeholder="Search neighborhoods...">
-        <button id="resetFilters">Reset Search</button>
-        <button id="fitToData">Fit to Data</button>
-    </div>
-    <div class="search-options">
-        <p><b>Search Options:</b><br>
-        Lower Manhattan<br>
-        Brooklyn Dumbo<br>
-        High Line<br>
-        Central Midtown<br>
-        Central Park<br>
-        Hamilton Park</p>
-    </div>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-    <script src="main.js"></script>
+  </main>
+
+  <!-- Load JavaScript file -->
+  <script src="poll-app.js"></script>
+
 </body>
 </html>
 
-<!-- Interactive elements with IDs for JavaScript -->
-<div id="messageDisplay"></div>            <!-- Empty container div with ID for JavaScript to fill -->
